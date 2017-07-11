@@ -1,0 +1,11 @@
+{
+	"name": "mysql-credentials",
+	"targetType": "library",
+	"authors": [
+		"Martin Brzenska"
+	],
+	"description": "Credentials loader for mysql clients",
+	"copyright": "Copyright © 2017, Martin Brzenska",
+	"license": "MIT"
+	
+}

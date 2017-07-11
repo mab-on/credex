@@ -1,0 +1,11 @@
+.dub
+dub.selections.json
+docs.json
+__dummy.html
+*.o
+*.obj
+__test__*__
+*test-library*
+*.exe
+*.lib
+*.a

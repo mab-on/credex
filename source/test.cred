@@ -1,0 +1,24 @@
+[google.de]
+host = 127.0.0.1
+port = 3306
+user = MyUser
+pwd = MyPassword
+db = MyDatabase
+
+[2nd test connection]
+host = localhost
+user = some_user
+pwd = 1234
+
+# this is a comment
+; this is a comment
+
+[3rd test connection]
+host = 127.0.0.1
+port = 3306
+user = sldkfölsdfq_09r#ewff92r
+pwd = 123ÖLKJääfdjlkfj?
+
+###########################################################################################################################
+# Please note, that comments must begin with '#' or ';' as the very first character of a line, without leading whitespaces
+###########################################################################################################################
