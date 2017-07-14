@@ -1,5 +1,5 @@
 /**
-* Store Database Credentials outside the sourcecode
+* Store database credentials outside the sourcecode
 *
 * This module makes it easy to load credentials from external files and use it for Database Clients.
 * This module was build with MySQL/MariaDB credentials in mind - but it can surely be used for similar credential structures.

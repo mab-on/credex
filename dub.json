@@ -4,7 +4,7 @@
 	"authors": [
 		"Martin Brzenska"
 	],
-	"description": "Load MySQL credentials from files",
+	"description": "Store database credentials outside the sourcecode",
 	"copyright": "Copyright © 2017, Martin Brzenska",
 	"license": "MIT"
 
