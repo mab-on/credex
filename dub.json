@@ -1,11 +1,11 @@
 {
-	"name": "mysql-credentials",
+	"name": "dbconnections",
 	"targetType": "library",
 	"authors": [
 		"Martin Brzenska"
 	],
-	"description": "Credentials loader for mysql clients",
+	"description": "Load MySQL credentials from files",
 	"copyright": "Copyright © 2017, Martin Brzenska",
 	"license": "MIT"
-	
+
 }

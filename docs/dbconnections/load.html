@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"/>
+<title>Function load</title>
+<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script></head><body onload="setupDdox();"><nav id="main-nav"><noscript><p style="color: red">The search functionality needs JavaScript enabled</p></noscript><div id="symbolSearchPane" style="display: none"><form action="#" method="GET">
+<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/></form><ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div class="module selected"><a href="../dbconnections.html">dbconnections</a></div></li></ul></nav><div id="main-contents"><h1>Function load</h1><p>Loads credentials from the given file
+</p><div class="prototype"><code class="lang-d"><div class="single-prototype">
+<a href="../dbconnections/Credential.html"><span class="typ">Credential</span></a><span class="pun">[]</span> <span class="pln">load</span>
+<span class="pun">(</span>
+<br/>
+&nbsp;&nbsp;<span class="typ">string</span> <span class="pln">file</span>
+<br/>
+<span class="pun">)</span><span class="pun">;</span></div></code></div><section><p>The file to load must have the appropriate format (see example below).
+ One file can hold multiple credential entities, each consisting of a name and a set of variables.
+</p>
+</section>
+
+<section><h2>Examples</h2>
+<pre class="code"><code class="lang-d"><span class="pun">[</span><span class="pln">connection_name</span><span class="pun">]
+</span><span class="pln">host </span><span class="pun">= </span><span class="lit">127.0.0.1
+</span><span class="pln">port </span><span class="pun">= </span><span class="lit">3306
+</span><span class="pln">user </span><span class="pun">= </span><span class="typ">MyUser
+</span><span class="pln">pwd </span><span class="pun">= </span><span class="typ">MyPassword
+</span><span class="pln">db </span><span class="pun">= </span><span class="typ">MyDatabase</span></code></pre>
+</section>
+<section><h2>Throws</h2>
+<p>CredentialException if file is not formated as expected
+</p>
+</section>
+<section><h2>Throws</h2>
+<p>ErrnoException if file could not be opened.
+</p>
+</section>
+<section><h2>Example</h2>
+
+<pre class="code"><code class="lang-d"><span class="kwd">auto </span><span class="pln">credentials </span><span class="pun">= <wbr/>.</span><span class="pln">load</span><span class="pun">(</span><span class="str">"./source/test.cred"</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">credentials<wbr/></span><span class="pun">.</span><span class="pln">length </span><span class="pun">== </span><span class="lit">3</span><span class="pun">);
+
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">credentials</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]<wbr/>.</span><span class="pln">connectionName </span><span class="pun">== </span><span class="str">"connection_name"</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">credentials</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]<wbr/>.</span><span class="pln">host </span><span class="pun">== </span><span class="str">"127.0.0.1"</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">credentials</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]<wbr/>.</span><span class="pln">port </span><span class="pun">== </span><span class="lit">3306</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">credentials</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]<wbr/>.</span><span class="pln">connectionString </span><span class="pun">== </span><span class="str">"host=127.0.0.1;port=3306;user=MyUser;pwd=MyPassword;db=MyDatabase"</span><span class="pun">);
+</span></code></pre>
+</section>
+
+<footer><table class="license-info"><tr><th>Authors</th><td><p>Martin Brzenska
+' Licence: MIT
+</p>
+</td></tr><tr><th>Copyright</th><td></td></tr><tr><th>License</th><td></td></tr></table><p class="faint">Generated using the DDOX documentation generator</p></footer></div></body></html>

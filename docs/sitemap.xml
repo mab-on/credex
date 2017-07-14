@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://127.0.0.1/index.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.connectionName.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.connectionName.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.connectionString.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.db.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.db.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.host.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.host.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.port.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.pwd.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.pwd.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.user.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/Credential.user.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/get.html</loc></url>
+<url><loc>http://127.0.0.1/dbconnections/load.html</loc></url>
+</urlset>

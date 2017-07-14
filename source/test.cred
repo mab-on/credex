@@ -1,4 +1,23 @@
-[google.de]
+###########################################################################################################################
+# Please note: comments must begin with '#' or ';' as the very first character of a line. No leading whitespaces are allowed
+# Credential Entity names should be noted lowercase, a Credential Entity name must be unique.
+#
+# Only the following variables are allowed:
+# - host
+# - port
+# - user
+# - pwd
+# - db
+#
+# The Variables should be notated in lowercase and must be unique in each Credential Entity.
+#
+# A Credential Entity consits of a name, noted inside of '[' and ']', and a set of variables.
+###########################################################################################################################
+
+# this is a comment
+; this is a comment
+
+[connection_name]
 host = 127.0.0.1
 port = 3306
 user = MyUser
@@ -10,15 +29,9 @@ host = localhost
 user = some_user
 pwd = 1234
 
-# this is a comment
-; this is a comment
-
-[3rd test connection]
+[3nd test connection]
 host = 127.0.0.1
 port = 3306
 user = sldkfölsdfq_09r#ewff92r
 pwd = 123ÖLKJääfdjlkfj?
 
-###########################################################################################################################
-# Please note, that comments must begin with '#' or ';' as the very first character of a line, without leading whitespaces
-###########################################################################################################################
