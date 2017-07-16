@@ -290,13 +290,30 @@ public Credential[] load(string file)
 }
 ///
 unittest {
-    auto credentials = .load("./source/test.cred");
+    Credential[] credentials = .load("./source/test.cred");
     assert(credentials.length == 3);
 
-    assert(credentials[0].connectionName == "connection_name");
-    assert(credentials[0].host == "127.0.0.1");
-    assert(credentials[0].port == 3306);
-    assert(credentials[0].connectionString == "host=127.0.0.1;port=3306;user=MyUser;pwd=MyPassword;db=MyDatabase");
+    assert(credentials.get("connection_name").connectionName == "connection_name");
+    assert(credentials.get("connection_name").host == "127.0.0.1");
+    assert(credentials.get("connection_name").port == 3306);
+    assert(credentials.get("connection_name").user == "MyUser");
+    assert(credentials.get("connection_name").pwd == "MyPassword");
+    assert(credentials.get("connection_name").db == "MyDatabase");
+    assert(credentials.get("connection_name").connectionString == "host=127.0.0.1;port=3306;user=MyUser;pwd=MyPassword;db=MyDatabase");
+
+}
+unittest
+{
+    Credential _2ndTestCred = .load("./source/test.cred").get("2nd test connection");
+
+    assert(_2ndTestCred.connectionName == "2nd test connection" );
+    assert(_2ndTestCred.connectionString == "host=localhost;user=some_user;pwd=1234" );
+    assert(_2ndTestCred.host == "localhost" );
+    assert(_2ndTestCred.user == "some_user" );
+    assert(_2ndTestCred.pwd == "1234" );
+    assert(_2ndTestCred.port.isNull );
+    assert(_2ndTestCred.db.isNull );
+
 }
 
 /**
