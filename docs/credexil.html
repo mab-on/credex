@@ -1,11 +1,11 @@
 <!DOCTYPE html><html><head>
 <meta charset="UTF-8"/>
-<title>Module dbconnections</title>
+<title>Module credexil</title>
 <link rel="stylesheet" type="text/css" href="./styles/ddox.css"/>
 <link rel="stylesheet" href="./prettify/prettify.css" type="text/css"/>
 <script type="text/javascript" src="./scripts/jquery.js">/**/</script><script type="text/javascript" src="./scripts/ddox.js">/**/</script></head><body onload="setupDdox();"><nav id="main-nav"><noscript><p style="color: red">The search functionality needs JavaScript enabled</p></noscript><div id="symbolSearchPane" style="display: none"><form action="#" method="GET">
 <input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/></form><ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="./symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "./";
-$('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div class="module selected"><a href="./dbconnections.html">dbconnections</a></div></li></ul></nav><div id="main-contents"><h1>Module dbconnections</h1><p>Store Database Credentials outside the sourcecode
+$('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div class="module selected"><a href="./credexil.html">credexil</a></div></li></ul></nav><div id="main-contents"><h1>Module credexil</h1><p>Store database credentials outside the sourcecode
 </p><section><p>This module makes it easy to load credentials from external files and use it for Database Clients.
  This module was build with MySQL/MariaDB credentials in mind - but it can surely be used for similar credential structures.
 </p>
@@ -13,11 +13,11 @@ $('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div clas
 
 <section></section><section><h2>Functions</h2><table>
 <col class="caption"/>
-<tr><th>Name</th><th>Description</th></tr><tr><td><code><a id="get" class="["public"]" href="./dbconnections/get.html">get</a><span class="decoration">(credentials, name)</span></code></td><td>Gets the Credential entity with the given name
-</td></tr><tr><td><code><a id="load" class="["public"]" href="./dbconnections/load.html">load</a><span class="decoration">(file)</span></code></td><td>Loads credentials from the given file
+<tr><th>Name</th><th>Description</th></tr><tr><td><code><a id="get" class="["public"]" href="./credexil/get.html">get</a><span class="decoration">(credentials, name)</span></code></td><td>Gets the Credential entity with the given name
+</td></tr><tr><td><code><a id="load" class="["public"]" href="./credexil/load.html">load</a><span class="decoration">(file)</span></code></td><td>Loads credentials from the given file
 </td></tr></table></section><section><h2>Structs</h2><table>
 <col class="caption"/>
-<tr><th>Name</th><th>Description</th></tr><tr><td><code><a id="Credential" class="["public"]" href="./dbconnections/Credential.html">Credential</a></code></td><td>Holds credentials used for a login
+<tr><th>Name</th><th>Description</th></tr><tr><td><code><a id="Credential" class="["public"]" href="./credexil/Credential.html">Credential</a></code></td><td>Holds credentials used for a login
 </td></tr></table></section><footer><table class="license-info"><tr><th>Authors</th><td><p>Martin Brzenska
 ' Licence: MIT
 </p>

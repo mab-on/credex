@@ -1,4 +1,4 @@
-# credex
+# credexil
 Keep database credentials outside the sourcecode
 
 This library makes it easy to load credentials from external files and use it for database clients.
